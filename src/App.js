@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react/cjs/react.development';
+import { useEffect, useState } from 'react';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
@@ -12,7 +12,7 @@ import LoaderContainer from './components/LoaderContainer';
 import Placeholder from './components/Placeholder/';
 
 
-export default function App() {
+export default function App () {
   const [images, setImages] = useState(null);
   const [page, setPage] = useState(1);
   const [searchValue, setSearchValue] = useState('');
